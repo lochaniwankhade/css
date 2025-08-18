@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #img{
+            clip-path: circle(30%);
+            float: right;
+            top: 0;
+        }
+        body{
+            background-color: rgb(198, 216, 198);
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(59, 8, 33);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px;
+        }
+        header h1
+     {
+  animation-name: example;
+  animation-duration: 6s;
+}
+
+@keyframes example {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: rgb(48, 48, 102);}
+  100% {color: rgb(11, 219, 11);}
+}
+        nav{
+ background-color: rgb(126, 5, 66);
+ color: #ffffff;
+ text-align: center;
+ padding: 10px 0;
+        }
+        nav a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 6px 6px;
+            margin: 0 12px;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        nav a:hover{
+            background-color: rgb(243, 123, 179);
+            border-radius: 6px;
+        }
+        h2{
+           color: rgb(55, 58, 51);
+           font-size: 1.8em;
+           text-decoration: underline 2px solid rgb(39, 43, 39);
+        }
+        h2:hover{
+            color: rgb(93, 95, 91);
+            cursor: pointer;
+        }
+        div.row{
+            display: flex;
+            padding: 10px;
+        }
+        div.col-20{
+            float: left;
+             padding: 25px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(7, 6, 6, 0.1);
+        border-radius: 8px;
+        line-height: 1.8;
+        font-size: 1.1em;
+        transition: box-shadow 0.3s ease;
+        }
+        div.col-60{
+            float: left;
+          padding: 50px;
+          margin: 20px auto;
+          max-width: 800px;
+          background-color: darkgrey;
+          box-shadow: 0 2px 5px rgba(7, 6, 6, 0.1);
+          border-radius: 8px;
+          line-height: 1.8;
+          font-size: 1.1em;
+          transition: box-shadow 0.3s;
+        }
+        footer{
+            background-color: rgb(90, 5, 34);
+             color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Individual CSS Website</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <img id="img" src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" width="300" height="300">
+    <div class="row">
+        <div class="col-20">
+        <h2>Skill Set</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        </div>
+    </div>
+    <div class="row">
+<div class="col-60">
+        <h2>Information</h2>
+        <p>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+</p>
+</div>
+</div>
+<div class="row">
+    <div class="col-20">
+    <h2>Image</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgYsHQ-lzleMza2DplwhClNuAd4w2G4DzLA&s">
+</div>
+</div>
+<footer>
+    <div>
+    Lochani Vinod Wankhade
+    </div>
+</footer>
+</body>
