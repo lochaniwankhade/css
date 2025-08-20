@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+<title>Animation</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+ <style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    header{
+        background-color: darkslategray;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0 ,0,0.1);
+    }
+    header h1{
+        margin:0;
+        font-size: 2.5em;
+    }
+    header p{
+font-size: 1.2em;
+margin-top: 10px;
+    }
+    nav{
+        background-color: rgb(74, 113, 113);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a{
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 15px;
+        margin: 0 5px;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+    nav a:hover{
+        background-color: rgb(187, 204, 184);
+        border-radius: 5px;
+        text-decoration: underline;
+    }
+    section{
+        padding: 25px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(7, 6, 6, 0.1);
+        border-radius: 8px;
+        line-height: 1.8;
+        font-size: 1.1em;
+        transition: box-shadow 0.3s ease;
+    }
+    section:hover{
+        box-shadow: 0 4px 10px rgba(0,0 ,0,0.2);
+    }
+    section h2{
+        color: #354235;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+        border-bottom: 2px solid #354235;
+        padding-bottom: 10px;
+    }
+    table ,th,td{
+        border-collapse: collapse;
+        border: 2px solid black;
+    }
+    th{
+        color: white;
+        text-align: center;
+        background-color: rgb(125, 127, 132);
+    }
+    td{
+        text-align: center;
+    }
+    tr:nth-child(even){
+        background-color: #bab4b4;
+    } 
+    section
+     input[type=send]{
+    background-color: #4CAF50;
+    color: white;
+    max-width: 6%;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 8px 16px 0 black;
+     }
+     input[type=send]:hover{
+    background-color: #1c9d21;
+     }
+       .gallery {
+      display: inline-block;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 0;
+      width: 190px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery .desc {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .gallery a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .gallery a:hover img {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .gallery a:focus img {
+      outline: 2px solid #35424a;
+      outline-offset: 4px;
+    }
+footer {
+      background-color: #35424a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    header h1 {
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes example {
+  from {color: red;}
+  to {color: yellow;}
+}
+div.animate {
+  left: 600px;
+  width: 20%;
+  height: 50px;
+   border-radius: 10px;
+  text-align: center;
+  padding-left: 16px 20px ;
+  background-color: rgb(105, 91, 91);
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(0deg, #623758 0%, #7c4f6e 100%);
+animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.pagination {
+  display: inline-block;
+  float: right;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.pagination a:hover
+ {
+    background-color: #ddd;
+}
+ </style>
+   <body>
+   <div>
+    <header>
+        <h1>Event Management Company</h1>
+        <div class="animate">
+        <p>NGO for planting trees</p>
+        </div>
+    </header>
+    <nav>
+        <i class="fa-regular fa-address-card"></i><a class="topnav-icons" href="#AboutUs">AboutUs</a>
+    <i class="fa-regular fa-circle-user"></i><a href="#ContactUs">ContactUs</a>
+       <i class="fa-regular fa-house"></i> <a href="#Home">Home</a>
+       <i class="fa-regular fa-bell-concierge"></i> <a href="#Service">Service</a>
+       <i class="fa-regular fa-calendar-days"></i> <a href="#Schedule">Schedule</a>
+    </nav>
+    </div>
+    <section>
+        <h2 id="AboutUs">About Event</h2>
+        <p>Event management is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions. It involves studying the brand, identifying its target audience, devising the event concept, and coordinating the technical aspects before actually launching the event.</p>
+    </section>
+    <section id="Schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Session Name</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Opening Ceremony</td>
+                    <td>10:00</td>
+                    <td>2025-07-01</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                       <td>2</td>
+            <td>Keynote Speech</td>
+            <td>11:00 AM</td>
+            <td>2025-07-01</td>
+            <td>Jane Smith</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Panel Discussion</td>
+            <td>01:00 PM</td>
+            <td>2025-07-01</td>
+            <td>Dr. Emily Johnson</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Networking Lunch</td>
+            <td>02:00 PM</td>
+            <td>2025-07-01</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Workshops</td>
+            <td>03:00 PM</td>
+            <td>2025-07-01</td>
+            <td>Various Speakers</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+            </tbody>
+        </table>
+    </section>
+    <section>
+    <form id="ContactUs">
+        <h1>Contact</h1>
+       <div>
+    <label for="name">First Name</label>
+                    </div>
+     <input type="text" placeholder="Enter your name">
+<div>
+    <label for="email">Email</label>
+</div>
+<input type="email" placeholder="Enter your email">
+<div>
+    <label for="number">Mobile No.</label>
+</div>
+<input type="number">
+<div class="row">
+    <input type="send" value="send">
+    </div>
+</div>
+    </form>
+    </section>  
+    <div id="Service">
+    <section id="Gallary">
+      <div class="gallery">
+        <a target="_blank" href="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c41f_666ada077d91f85eb80ee4c8_pexels-yankrukov-7793927%2520(1).jpeg">
+  
+          <img src="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c41f_666ada077d91f85eb80ee4c8_pexels-yankrukov-7793927%2520(1).jpeg" >
+        </a>
+        <div class="desc">Add a description of the image here</div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c429_666adaedfe7153c141db6767_pexels-vlada-karpovich-7433843%2520(1).jpeg">
+          <img src="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c429_666adaedfe7153c141db6767_pexels-vlada-karpovich-7433843%2520(1).jpeg">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c41b_666ad94f96c2e7a3a72c44c1_pexels-rdne-7648051%2520(1).jpeg">
+                <img src="https://cdn.prod.website-files.com/61cee5ec4d566db869eca133/66b7d02d7d9f1ab99398c41b_666ad94f96c2e7a3a72c44c1_pexels-rdne-7648051%2520(1).jpeg">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </section>
+  </div>
+  <footer>
+      <p>&copy; 2025 Event Management Company. All rights reserved.</p>
+      <p>Follow us on:
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p> 
+       <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
+</body>
+</html>
