@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            font: normal'times new roman',serif;
+            background-color: #f5eeee;
+            color: #555;
+        }
+        .main, .logo{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header{
+            background-color: #323232;
+            height: 180px;
+        }
+        .logo{
+            width: 880px;
+            height: 150px;
+            position: relative;
+            background-color: transparent;
+        }
+        .logo .logo-text{
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+        .logo h1, .logo h3{
+            font: normal 'times new roman',serif;
+            border-bottom: 0;
+            text-transform: none;
+            margin: 0 0 0 9px;
+        }
+        .logo-text h1,.logo-text h3{
+            padding: 22px 0 0 0;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+            text-decoration: none;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+        }
+        .logo-text h3{
+            font-size: 150%;
+            padding-top: 4px;
+            color: #999;
+        }
+        .logo-text h1{
+             animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+         @keyframes example {
+  from {color: red;}
+  to {color: rgb(144, 126, 205);}
+}
+        .menubar{
+            width: 880px;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul{
+            margin: 2px 0 22px 17px;
+        }
+        ul li{
+            list-style-type: none;
+            margin-left: 6px;
+            padding: 0 0 4px 5px;
+            line-height: 1.5em;
+        }
+        ul.menu{
+            float: right;
+            margin: 0;
+        }
+        ul.menu li{
+            float: left;
+            padding: 0 0 0 10px;
+            margin: 1px 2px 0 0;
+            list-style: none;
+            background-color: #5a5a5a;
+            border-radius: 4px;
+        }
+        ul.menu li a{
+            font: normal 'time new roman',serif;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            float: left;
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+            text-align: center;
+            text-decoration: none;
+            font-size: large;
+            font-weight: 600;
+        }
+        ul.menu li a:hover{
+            background-color: #999;
+            border-radius:4px;
+        }
+        .site-content{
+            margin: 0;
+            padding: 0;
+            width: 880px;
+            overflow: hidden;
+            margin: 20px auto 0 auto;
+            padding: 0 0 20px 0;
+            background-color: #f5eeee;
+        }
+        .banner{
+            background: transparent url(https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw=) no-repeat;
+            width: 880px;
+            height: 500px;
+            margin-bottom: 20px;
+            background-size: cover;
+            border: 10px solid #DDD;
+        }
+        .site-container{
+            float: right;
+            width: 224px;
+        }
+        .sidebar{
+            float: right;
+            width: 224px;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+        .sidbar-top{
+            width: 224px;
+            height: 14px;
+            background: transparent;
+        }
+        .sidbar-item{
+            width:224px;
+            padding: 10px;
+            background-color: #F5F5F5;
+            border: 1PX solid #DDD;
+            box-shadow: 0 8px 16px 0 black;
+        }
+        .content{
+            text-align: left;
+            width: 640px;
+            padding: 0 0 0 5px;
+            float: left;
+        }
+        .content h1{
+            font: normal 'times new roman',serif;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        .content p{
+            font: normal 'times new roman',serif;
+            color: #555;
+            line-height: 1.5em;
+            margin: 0 0 10px 0;
+        }
+       .footer{
+        width: 100%;
+        background: #3B3939;
+        height: 100px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        padding: 28px 0 0 0;
+        text-align: center;
+        color: #fff;
+       }
+       .footer p{
+        margin: 0;
+        padding: 0 0 10px 0;
+        line-height: 1.7em;
+       }
+       .footer p a{
+        color: #fff;
+        text-decoration: none;
+       }
+       .footer p a:hover{
+    color:#fff;
+    text-decoration: underline;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+        <div class="logo">
+            <div class="logo-text">
+                <h1>LOCHANI VINOD WANKHADE</h1>
+                <h3>Fresher</h3>
+            </div>
+        </div>
+        <div class="menubar">
+            <ul class="menu">
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="site-content">
+<div class="banner"></div>
+<div class="side-container"> 
+    <div class="sidebar">
+        <div class="sidbar-top"></div>
+        <div class="sidbar-item">
+            <h3>Skills I have</h3>
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sequi minima commodi assumenda ut sint tempora saepe perspiciatis esse omnis molestiae quam ea, pariatur neque sunt ullam fuga dolorem aliquid?</p>
+            <br>
+            <a href="#">Read More....</a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>"Highly motivated and results-oriented graduate with a Bachelor's degree in Computer Science. Proven ability to learn quickly and apply problem-solving skills to develop innovative solutions. Eager to contribute to a dynamic software development environment and grow my career in the [Industry] field." </p>
+</div>
+    </div>
+    <div class="footer">
+        <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Projects</a> | <a href="#">Contact</a></p>
+        <p>&copy;lochani wankhade
+        </p>
+    </div>
+    </div>
+</body>
+</html>
